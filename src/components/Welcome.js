@@ -3,7 +3,11 @@ import React, {Component} from 'react'
 class Welcome extends Component {
 
     render(){
-        return <h1>Welcome to Class Component</h1>
+        return (
+            <div>
+                <h1>Name is {this.props.name} and has skill {this.props.skill} - {this.props.children}</h1>
+            </div>
+        )
     }
 }
 
